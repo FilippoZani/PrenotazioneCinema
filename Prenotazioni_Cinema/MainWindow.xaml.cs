@@ -25,6 +25,8 @@ namespace Prenotazioni_Cinema
         public List<Posto> posti;
         public int postiRimanenti;
         public int numeroPostiDaPrenotare;
+        private static object x = new object();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -97,10 +99,8 @@ namespace Prenotazioni_Cinema
 
                 if (numeroPostiDaPrenotare > 0 && numeroPostiDaPrenotare <= postiRimanenti)
                 {
-                    Threads tr1 = new Threads();
-
-                    Thread t1 = new Thread(new ThreadStart(tr1.Thread1));
-                    Thread t2 = new Thread(new ThreadStart(tr1.Thread2));
+                    Thread t1 = new Thread(new ThreadStart(Thread1));
+                    Thread t2 = new Thread(new ThreadStart(Thread2));
 
                     t1.Start();
                     t2.Start();
@@ -124,10 +124,8 @@ namespace Prenotazioni_Cinema
                 Random rnd = new Random();
                 numeroPostiDaPrenotare = rnd.Next(1, postiRimanenti + 1);
 
-                Threads tr1 = new Threads();
-
-                Thread t1 = new Thread(new ThreadStart(tr1.Thread1));
-                Thread t2 = new Thread(new ThreadStart(tr1.Thread2));
+                Thread t1 = new Thread(new ThreadStart(Thread1));
+                Thread t2 = new Thread(new ThreadStart(Thread2));
 
                 t1.Start();
                 t2.Start();
@@ -136,6 +134,49 @@ namespace Prenotazioni_Cinema
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void Thread1()
+        {
+            lock (x)
+            {
+                for (int i = 0; i < numeroPostiDaPrenotare; i++)
+                {
+                    posti[i].Libero = false;
+                }
+
+                this.Dispatcher.BeginInvoke(new Action(() =>
+                {
+                    ScritturaPostiSuLista();
+                }));
+            }
+        }
+
+        public void Thread2()
+        {
+            lock (x)
+            {
+                for (int i = 0; i < numeroPostiDaPrenotare; i++)
+                {
+                    posti[i].Libero = false;
+                }
+
+                this.Dispatcher.BeginInvoke(new Action(() =>
+                {
+                    ScritturaPostiSuLista();
+                }));
+            }
+        }
+
+        private void btnSvuotaCinema_Click(object sender, RoutedEventArgs e)
+        {
+            foreach(Posto p in posti)
+            {
+                if(p.Libero == false)
+                {
+                    p.Libero = true;
+                }
             }
         }
     }

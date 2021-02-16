@@ -8,13 +8,11 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Image Margin="0,0,-0.4,0" Source="Cinema.jpg" Stretch="Fill"/>
-        <ListBox x:Name="lstPrenotazioniPosti" HorizontalAlignment="Left" Height="235" Margin="150,25,0,0" VerticalAlignment="Top" Width="150" Background="#FFADADAD"/>
-        <TextBox x:Name="txtPostoDaPrenotare1" HorizontalAlignment="Left" Height="25" Margin="350,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Background="#FFA3A3A3"/>
-        <TextBox x:Name="txtPostoDaPrenotare2" HorizontalAlignment="Left" Height="25" Margin="525,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Background="#FFA5A5A5"/>
-        <Button x:Name="btnPrenotaPosto1" Content="PRENOTA" HorizontalAlignment="Left" Margin="375,75,0,0" VerticalAlignment="Top" Width="75" Height="50" Background="Red"/>
-        <Button x:Name="btnPrenotaPosto2" Content="PRENOTA" HorizontalAlignment="Left" Margin="550,75,0,0" VerticalAlignment="Top" Width="75" Height="50" Background="Red"/>
-        <Button x:Name="btnPrenotazioneRandomica" Content="PRENOTAZIONE RANDOMICA" HorizontalAlignment="Left" Margin="415,135,0,0" VerticalAlignment="Top" Width="175" Height="50" Background="#FFD9FF00"/>
-        <Button x:Name="btnSvuotaCinema" Content="SVUOTA CINEMA" HorizontalAlignment="Left" Margin="415,195,0,0" VerticalAlignment="Top" Width="175" Height="50" Background="#FF00FF15"/>
+        <ListBox x:Name="lstPrenotazioniPosti" HorizontalAlignment="Left" Height="235" Margin="200,25,0,0" VerticalAlignment="Top" Width="150" Background="#FFADADAD"/>
+        <TextBox x:Name="txtPostoDaPrenotare" HorizontalAlignment="Left" Height="25" Margin="440,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Background="#FFA3A3A3"/>
+        <Button x:Name="btnPrenotaPosto" Content="PRENOTA" HorizontalAlignment="Left" Margin="440,75,0,0" VerticalAlignment="Top" Width="175" Height="50" Background="Red" Click="btnPrenotaPosto_Click"/>
+        <Button x:Name="btnPrenotazioneRandomica" Content="PRENOTAZIONE RANDOMICA" HorizontalAlignment="Left" Margin="440,135,0,0" VerticalAlignment="Top" Width="175" Height="50" Background="#FFD9FF00" Click="btnPrenotazioneRandomica_Click"/>
+        <Button x:Name="btnSvuotaCinema" Content="SVUOTA CINEMA" HorizontalAlignment="Left" Margin="440,195,0,0" VerticalAlignment="Top" Width="175" Height="50" Background="#FF00FF15" Click="btnSvuotaCinema_Click"/>
 
     </Grid>
 </Window>

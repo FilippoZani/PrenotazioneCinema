@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Prenotazioni_Cinema
 {
-    class Posto
+    public class Posto
     {
         private int _numero;
         private bool _libero;
