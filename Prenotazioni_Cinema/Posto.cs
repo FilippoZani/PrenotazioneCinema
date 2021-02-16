@@ -22,7 +22,7 @@ namespace Prenotazioni_Cinema
             get => _numero;
             set
             {
-                if(Numero < 1 || Numero > 101)
+                if(Numero < 1 || Numero > 11)
                 {
                     throw new Exception("Il numero del posto inserito non è disponibile");
                 }
