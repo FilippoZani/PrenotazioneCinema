@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Prenotazioni_Cinema
 {
@@ -20,9 +21,55 @@ namespace Prenotazioni_Cinema
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Posto> posti;
         public MainWindow()
         {
             InitializeComponent();
+
+            posti = new List<Posto>();
+
+            LetturaPostiDaFile();
+
+            ScritturaPostiSuLista();
+        }
+
+        public void LetturaPostiDaFile()
+        {
+            using(StreamReader file = new StreamReader("Posti.txt"))
+            {
+                string riga;
+
+                while (!file.EndOfStream)
+                {
+                    try
+                    {
+                        riga = file.ReadLine();
+                        string[] elementi = riga.Split('|');
+
+                        if(elementi.Length == 2)
+                        {
+                            posti.Add(new Posto(int.Parse(elementi[0]), bool.Parse(elementi[1])));
+                        }
+                        else
+                        {
+                            posti.Add(new Posto(int.Parse(elementi[0]), true));
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+        }
+
+        public void ScritturaPostiSuLista()
+        {
+            lstPrenotazioniPosti.Items.Clear();
+            foreach(Posto p in posti)
+            {
+                lstPrenotazioniPosti.Items.Add(p.ToString());
+            }
         }
     }
 }

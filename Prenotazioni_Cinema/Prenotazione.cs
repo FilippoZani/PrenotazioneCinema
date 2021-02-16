@@ -8,5 +8,20 @@ namespace Prenotazioni_Cinema
 {
     class Prenotazione
     {
+        private List<Posto> _posti;
+
+        public Prenotazione(List<Posto> posti)
+        {
+            _posti = posti;
+        }
+
+        public List<Posto> Posti
+        {
+            get => _posti;
+            set
+            {
+                _posti = Posti;
+            }
+        }
     }
 }
