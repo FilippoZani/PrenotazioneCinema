@@ -1,0 +1,14 @@
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\bin\Debug\Prenotazioni_Cinema.exe.config
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\bin\Debug\Prenotazioni_Cinema.exe
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\bin\Debug\Prenotazioni_Cinema.pdb
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\obj\Debug\Prenotazioni_Cinema.csprojAssemblyReference.cache
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\obj\Debug\MainWindow.g.cs
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\obj\Debug\App.g.cs
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\obj\Debug\Prenotazioni_Cinema_MarkupCompile.cache
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\obj\Debug\Prenotazioni_Cinema_MarkupCompile.lref
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\obj\Debug\MainWindow.baml
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\obj\Debug\Prenotazioni_Cinema.g.resources
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\obj\Debug\Prenotazioni_Cinema.Properties.Resources.resources
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\obj\Debug\Prenotazioni_Cinema.csproj.GenerateResource.cache
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\obj\Debug\Prenotazioni_Cinema.exe
+C:\Users\FILIPPO ZANI\Documents\ProgettiGITHUB\Prenotazioni_Cinema\Prenotazioni_Cinema\obj\Debug\Prenotazioni_Cinema.pdb
