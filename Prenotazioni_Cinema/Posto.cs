@@ -36,7 +36,7 @@ namespace Prenotazioni_Cinema
             get => _libero;
             set
             {
-                _libero = Libero;
+                _libero = value;
             }
         }
 

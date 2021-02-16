@@ -178,6 +178,8 @@ namespace Prenotazioni_Cinema
                     p.Libero = true;
                 }
             }
+
+            ScritturaPostiSuLista();
         }
     }
 }
